@@ -23,7 +23,7 @@ class SignUp extends React.Component{
         const { email, displayName, password, confirmPassword } = this.state;
 
         //valido formulario
-        if(password != confirmPassword){
+        if(password !== confirmPassword){
             alert("Password and Confirm Password don't match");
             return;
         }
